@@ -1,0 +1,25 @@
+workstation id=JewelryStoreDB.mssql.somee.com;packet size=4096;user id=tridoanngoc_SQLLogin_1;pwd=l6b2t8vzym;data source=JewelryStoreDB.mssql.somee.com;persist security info=False;initial catalog=JewelryStoreDB
+
+
+
+
+
+Server=DNT;Initial Catalog=JewelryStoreDB;Persist Security Info=False;User ID=sa;Password=1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30; 
+
+
+
+-----------------Online
+<connectionStrings>
+    <add name="JewelryStoreDBEntities" connectionString="metadata=res://*/JewelryStoreDataModel.csdl|res://*/JewelryStoreDataModel.ssdl|res://*/JewelryStoreDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;workstation id=JewelryStoreDB.mssql.somee.com;packet size=4096;user id=tridoanngoc_SQLLogin_1;pwd=l6b2t8vzym;data source=JewelryStoreDB.mssql.somee.com;persist security info=False;initial catalog=JewelryStoreDB&quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>
+
+-----------------Local
+
+<connectionStrings>
+    <add name="JewelryStoreDBEntities" connectionString="metadata=res://*/JewelryStoreDataModel.csdl|res://*/JewelryStoreDataModel.ssdl|res://*/JewelryStoreDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=DNT;Initial Catalog=JewelryStoreDB;Persist Security Info=False;User ID=sa;Password=1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30; &quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>
+
+
+
+
+

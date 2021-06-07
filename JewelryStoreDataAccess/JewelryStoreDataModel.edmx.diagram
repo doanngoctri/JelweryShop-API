@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="52a43ff1d1ef409f87906b81a824bbba" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="JewelryStoreDBModel.Advertisment" Width="1.5" PointX="9.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.CartItem" Width="1.5" PointX="9.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.Cart" Width="1.5" PointX="7.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.Category" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.OderItem" Width="1.5" PointX="9.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.Order" Width="1.5" PointX="7.5" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.ProductGroup" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.Product" Width="1.5" PointX="7.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.Role" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.Status" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.SubCategory" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelryStoreDBModel.User" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_Advert_Pro" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_CartItem_Cart" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.fk_CartItem_Pro" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_Cart_User" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_SubCate_Cate" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_OrderItem_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_OrderItem_Pro" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_Pro_ProGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_Pro_SubCate" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelryStoreDBModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

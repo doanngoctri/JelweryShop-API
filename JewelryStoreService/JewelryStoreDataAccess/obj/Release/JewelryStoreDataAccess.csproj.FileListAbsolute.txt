@@ -1,0 +1,10 @@
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\bin\Release\JewelryStoreDataAccess.dll.config
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\bin\Release\JewelryStoreDataAccess.dll
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\bin\Release\JewelryStoreDataAccess.pdb
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\bin\Release\EntityFramework.dll
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\bin\Release\EntityFramework.SqlServer.dll
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\bin\Release\EntityFramework.xml
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\bin\Release\EntityFramework.SqlServer.xml
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\obj\Release\JewelryStoreDataAccess.dll
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\obj\Release\JewelryStoreDataAccess.pdb
+D:\Architecture&DesigningSystem\JewelryStoreService\JewelryStoreDataAccess\obj\Release\JewelryStoreDataAccess.csprojResolveAssemblyReference.cache

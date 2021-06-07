@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JewelryStoreDBModelStoreContainer" CdmEntityContainer="JewelryStoreDBEntities">
+    <EntitySetMapping Name="Advertisments">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.Advertisment">
+        <MappingFragment StoreEntitySet="Advertisments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CartItems">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.CartItem">
+        <MappingFragment StoreEntitySet="CartItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="CartId" ColumnName="CartId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.Cart">
+        <MappingFragment StoreEntitySet="Carts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OderItems">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.OderItem">
+        <MappingFragment StoreEntitySet="OderItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BuyingDay" ColumnName="BuyingDay" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductGroups">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.ProductGroup">
+        <MappingFragment StoreEntitySet="ProductGroups">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SubCateId" ColumnName="SubCateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProGroupId" ColumnName="ProGroupId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statuses">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.Status">
+        <MappingFragment StoreEntitySet="Statuses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubCategories">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.SubCategory">
+        <MappingFragment StoreEntitySet="SubCategories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="JewelryStoreDBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Lock" ColumnName="Lock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SignUp" FunctionName="JewelryStoreDBModel.Store.SignUp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.SignUp_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="JewelryStoreDBModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="JewelryStoreDBModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="JewelryStoreDBModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="JewelryStoreDBModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="JewelryStoreDBModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="JewelryStoreDBModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="JewelryStoreDBModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="Login" FunctionName="JewelryStoreDBModel.Store.Login">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.Login_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ChangePass" FunctionName="JewelryStoreDBModel.Store.ChangePass">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.ChangePass_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CheckOut" FunctionName="JewelryStoreDBModel.Store.CheckOut">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.CheckOut_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeleteCartItem" FunctionName="JewelryStoreDBModel.Store.DeleteCartItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.DeleteCartItem_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllAdvs" FunctionName="JewelryStoreDBModel.Store.GetAllAdvs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllAdvs_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllCategories" FunctionName="JewelryStoreDBModel.Store.GetAllCategories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllCategories_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllOrdersOfUser" FunctionName="JewelryStoreDBModel.Store.GetAllOrdersOfUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllOrdersOfUser_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BuyingDay" ColumnName="BuyingDay" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllProductGroups" FunctionName="JewelryStoreDBModel.Store.GetAllProductGroups">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllProductGroups_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SubCateId" ColumnName="SubCateId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllProducts" FunctionName="JewelryStoreDBModel.Store.GetAllProducts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllProducts_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProGroupId" ColumnName="ProGroupId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllProductsOfCart" FunctionName="JewelryStoreDBModel.Store.GetAllProductsOfCart">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllProductsOfCart_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProGroupId" ColumnName="ProGroupId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllProGroupsOfSubCate" FunctionName="JewelryStoreDBModel.Store.GetAllProGroupsOfSubCate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllProGroupsOfSubCate_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SubCateId" ColumnName="SubCateId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllProsOfProGroup" FunctionName="JewelryStoreDBModel.Store.GetAllProsOfProGroup">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllProsOfProGroup_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProGroupId" ColumnName="ProGroupId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllSalePros" FunctionName="JewelryStoreDBModel.Store.GetAllSalePros">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllSalePros_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProGroupId" ColumnName="ProGroupId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllSubCategories" FunctionName="JewelryStoreDBModel.Store.GetAllSubCategories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllSubCategories_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllSubCatesOfCate" FunctionName="JewelryStoreDBModel.Store.GetAllSubCatesOfCate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetAllSubCatesOfCate_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetCartCount" FunctionName="JewelryStoreDBModel.Store.GetCartCount" />
+    <FunctionImportMapping FunctionImportName="GetDetailProductById" FunctionName="JewelryStoreDBModel.Store.GetDetailProductById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetDetailProductById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProGroupId" ColumnName="ProGroupId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetOderItemByOder" FunctionName="JewelryStoreDBModel.Store.GetOderItemByOder">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetOderItemByOder_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetOrderByStatus" FunctionName="JewelryStoreDBModel.Store.GetOrderByStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetOrderByStatus_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BuyingDay" ColumnName="BuyingDay" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetUserInfoByID" FunctionName="JewelryStoreDBModel.Store.GetUserInfoByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.GetUserInfoByID_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Lock" ColumnName="Lock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MinusCartItem" FunctionName="JewelryStoreDBModel.Store.MinusCartItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.MinusCartItem_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PlusCartItem" FunctionName="JewelryStoreDBModel.Store.PlusCartItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.PlusCartItem_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UpdateUserInfo" FunctionName="JewelryStoreDBModel.Store.UpdateUserInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.UpdateUserInfo_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_all_orders" FunctionName="JewelryStoreDBModel.Store.sp_get_all_orders">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.sp_get_all_orders_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BuyingDay" ColumnName="BuyingDay" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_detail_of_an_order" FunctionName="JewelryStoreDBModel.Store.sp_get_detail_of_an_order">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.sp_get_detail_of_an_order_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_accept_order" FunctionName="JewelryStoreDBModel.Store.sp_accept_order" />
+    <FunctionImportMapping FunctionImportName="sp_add_new_product" FunctionName="JewelryStoreDBModel.Store.sp_add_new_product" />
+    <FunctionImportMapping FunctionImportName="sp_top_ten" FunctionName="JewelryStoreDBModel.Store.sp_top_ten">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.sp_top_ten_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProGroupId" ColumnName="ProGroupId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_statistic_from_to" FunctionName="JewelryStoreDBModel.Store.sp_statistic_from_to">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.sp_statistic_from_to_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProGroupId" ColumnName="ProGroupId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_product_groups" FunctionName="JewelryStoreDBModel.Store.sp_get_product_groups">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.sp_get_product_groups_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_item_of_an_order" FunctionName="JewelryStoreDBModel.Store.sp_get_item_of_an_order">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JewelryStoreDBModel.sp_get_item_of_an_order_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProGroupId" ColumnName="ProGroupId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
